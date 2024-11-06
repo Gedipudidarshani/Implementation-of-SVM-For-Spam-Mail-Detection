@@ -25,47 +25,47 @@ RegisterNumber: 212223230062
 import pandas as pd
 data=pd.read_csv("spam.csv",encoding='windows-1252')
 ```
-## Output:
+### Output:
 
 ```
 data.head()
 ```
-## Output:
+### Output:
 
 ```
 data.tail()
 ```
-## Output:
+### Output:
 
 ```
 data.info()
 ```
-## Output:
+### Output:
 
 ```
 data.isnull().sum()
 ```
-## Output:
+### Output:
 
 ```
 x=data['v2'].values
 ```
-## Output:
+### Output:
 
 ```
 y=data['v1'].values
 ```
-## Output:
+### Output:
 
 ```
 y.shape
 ```
-## Output:
+### Output:
 
 ```
 x.shape
 ```
-## Output:
+### Output:
 
 ```
 from sklearn.model_selection import train_test_split
@@ -74,13 +74,13 @@ x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2,random_state=0)
 ```
 x_train.shape
 ```
-## Output:
+### Output:
 
 
 ```
 y_train.shape
 ```
-## Output:
+### Output:
 
 ```
 from sklearn.feature_extraction.text import CountVectorizer
@@ -93,12 +93,12 @@ x_test=cv.transform(x_test)
 ```
 x_train.shape
 ```
-## Output:
+### Output:
 
 ```
 type(x_train)
 ```
-## Output:
+### Output:
 
 ```
 from sklearn.svm import SVC
@@ -107,14 +107,14 @@ svc.fit(x_train,y_train)
 y_pred=svc.predict(x_test)
 y_pred
 ```
-## Output:
+### Output:
 
 ```
 from sklearn import metrics
 accuracy=metrics.accuracy_score(y_test,y_pred)
 accuracy
 ```
-## Output:
+### Output:
 
 
 ## Result:
